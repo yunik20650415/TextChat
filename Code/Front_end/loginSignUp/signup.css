@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(238, 236, 236);
+}
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 30px;
+    width: 30vw;
+    margin: 10px;
+    padding: 0;
+    font-size: 30px;
+    font-family: 'Hubballi', sans-serif;
+}
+.logo_container img{
+    height: 80px;
+}
+/* Main part of website */
+.container{
+    background-color: white;
+    height: fit-content;
+    width: 30vw;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+
+}
+.container form *{
+    margin: 5px;
+    border-radius: 10px ;
+    padding:14px 10px;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+.container form #loginBtn{
+    background-color: #1877f2;
+    color: white;
+    font-weight: 600;
+}
+#login{
+    background-color: #42b72a;
+    width: fit-content;
+    margin: 19px auto;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 600;
+    font-family: 'Hubballi', sans-serif;
+}
+.hover:hover{
+    cursor: pointer;
+}
+/* For website's responsiveness */
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 50vw;
+    }
+    nav{
+        width: 50vw;
+    }
+  }
+@media screen and (max-width: 550px) {
+    .container{
+        width: 60vw;
+    }
+    nav{
+        width: 60vw;
+    }
+  }
